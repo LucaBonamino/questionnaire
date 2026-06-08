@@ -132,10 +132,10 @@ document.addEventListener("DOMContentLoaded", () => {
         : "";
 
     const engagementScore =
-      totalQuestionsInDomain > 0
+      questionsAnswered > 0 && totalQuestionsInDomain > 0
         ? questionsAnswered / totalQuestionsInDomain
         : "";
-
+        
     if (totalDomainScoreInput) {
       totalDomainScoreInput.value =
         questionsAnswered > 0 ? totalDomainScore : "";
